@@ -11,9 +11,9 @@ namespace SpotOk
     {
         public static void Testing()
         {
-            String api_key = "";  //OKCoin申请的apiKey
-            String secret_key = "";  //OKCoin申请的secretKey
-            String url_prex = "https://www.okcoin.com"; //国内站账号配置 为 https://www.okcoin.cn
+            String api_key = "7f2cbe21-c5b8-41c9-a0a3-4162135488ce";  //OKCoin申请的apiKey
+            String secret_key = "71861FCBAC28C99D324AB943B6469610";  //OKCoin申请的secretKey
+            String url_prex = "https://www.okex.com"; //国内站账号配置 为 https://www.okcoin.cn
             //期货操作
             FutureRestApiV1 getRequest = new FutureRestApiV1(url_prex);
             FutureRestApiV1 postRequest = new FutureRestApiV1(url_prex, api_key, secret_key);
@@ -30,7 +30,7 @@ namespace SpotOk
             //获取交割预估价
             //Console.WriteLine(getRequest.future_estimated_price("ltc_usd"));
             // 获取期货合约的K线数据
-            //Console.WriteLine(getRequest.future_kline("ltc_usd", "1min", "this_week", "1", "1417536000000"));
+            //Console.WriteLine(getRequest.future_kline("ltc_usdt", "1min", "this_week", "1", "1417536000000"));
             //获取当前可用合约总持仓量
             //Console.WriteLine(getRequest.future_hold_amount("ltc_usd","this_week"));
             // 获取期货账户信息 （全仓）
@@ -68,7 +68,7 @@ namespace SpotOk
             //获取最近600交易信息
             //Console.WriteLine(getRequest1.trades("ltc_usd","20"));
             //获取比特币或莱特币的K线数据
-            Console.WriteLine(getRequest1.kline("ltc_usd", "1min", "2", "1417536000000"));
+            Console.WriteLine(getRequest1.kline("eos_usdt", "1min", "144", "0"));
             // 获取用户信息
             //Console.WriteLine(postRequest1.userinfo());
             //下单交易(order_id":32490296)
