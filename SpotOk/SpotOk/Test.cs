@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpotOk.Ok;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace SpotOk
 {
     class Test
     {
-        public static void Test()
+        public static void Testing()
         {
             String api_key = "";  //OKCoin申请的apiKey
             String secret_key = "";  //OKCoin申请的secretKey
@@ -67,7 +68,7 @@ namespace SpotOk
             //获取最近600交易信息
             //Console.WriteLine(getRequest1.trades("ltc_usd","20"));
             //获取比特币或莱特币的K线数据
-            //Console.WriteLine(getRequest1.kline("ltc_usd", "1min", "2", "1417536000000"));
+            Console.WriteLine(getRequest1.kline("ltc_usd", "1min", "2", "1417536000000"));
             // 获取用户信息
             //Console.WriteLine(postRequest1.userinfo());
             //下单交易(order_id":32490296)

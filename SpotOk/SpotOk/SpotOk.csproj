@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ok\FutureRestApiV1.cs" />
     <Compile Include="Ok\HttpUtilManager.cs" />
+    <Compile Include="Ok\IFutureRestApi.cs" />
     <Compile Include="Ok\IStockRestApi.cs" />
     <Compile Include="Ok\MD5Util.cs" />
     <Compile Include="Ok\StockRestApi.cs" />

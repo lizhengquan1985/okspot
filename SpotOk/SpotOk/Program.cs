@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpotOk.Ok;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace SpotOk
     {
         static void Main(string[] args)
         {
+            Test.Testing();
+
+            Console.ReadLine();
         }
     }
 }
